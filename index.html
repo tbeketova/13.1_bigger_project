@@ -6,19 +6,33 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
   <link rel="stylesheet" href="css/style.css">
   <title>13.1 Реализация больших проектов</title>
 </head>
 <body>
+
+  <ul id="slide-out" class="sidenav">
+    <li><a href="#!"><i class="material-icons">cloud</i>About us</a></li>
+    <li><a href="#!"><i class="material-icons">adb</i>About us</a></li>
+    <li><a href="#!"><i class="material-icons">apps</i>About us</a></li>
+    <li><div class="divider"></div></li>
+    <li><a href="#!" class="sidenav-close"><i class="material-icons">apps</i>Close</a></li>
+  </ul>
+  
+
   <header class="header">
     <div class="container">
       <div class="header__title">
         <img src="img/logo.svg" class="logo" alt="Logotip" width="60" height="60">
-        <button class="burger">
+        <a class="burger sidenav-trigger" data-target="slide-out">
           <span class="burger-line"></span>
           <span class="burger-line"></span>
           <span class="burger-line"></span>
-        </button>
+        </a>
       </div>
       <h1 class="header__h1">РЕАЛИЗУЕМ КРУПНЕЙШИЕ ПРОЕКТЫ В РОССИИ</h1>
       <p class="header__slogan">стадионы, газопроводы, мосты, дамбы</p>
@@ -297,5 +311,8 @@
       </div>
     </div>
   </footer>
+
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
