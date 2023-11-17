@@ -41,6 +41,7 @@ body {
 .container {
   max-width: 1110px;
   margin: 0 auto;
+  /*нужно добавить отступи padding по краям*/
 }
 
 .text-h2 {
@@ -285,7 +286,6 @@ body {
 }
 
 /*Services*/
-.services {}
 
 .services__title {
   text-align: center;
@@ -368,12 +368,12 @@ body {
   margin-bottom: 20px;
 }
 
-.questions__h3.open::before,
+/*.questions__h3.open::before,
 .questions__h3.close::before {
   content: "";
-  display: inline-block;
-  /*чтобьi вьiставить margin от иконки*/
-  width: 15px;
+  display: inline-block;*/
+/*чтобьi вьiставить margin от иконки*/
+/*width: 15px;
   height: 15px;
   background-image: url(../img/Polygon.svg);
   background-repeat: no-repeat;
@@ -387,15 +387,10 @@ body {
 
 .questions__h3.close+.questions__text {
   display: none;
-}
-
-.questions__h3.close {
-  /* margin-bottom: 33px; */
-}
+}*/
 
 .questions__text {
   max-width: 730px;
-
 }
 
 /*Partners*/
@@ -500,11 +495,18 @@ body {
 }
 
 .contacts__item {
-  width: 255px;
+  max-width: 255px;
 }
 
 .contacts__item img {
+  width: 255px;
+  height: 49px;
   margin-bottom: 20px;
+}
+
+.contacts__item-email-img {
+  width: 235px;
+  height: 39px;
 }
 
 .contacts__item-title {
@@ -520,10 +522,18 @@ body {
   color: #000;
 }
 
+.contacts__item-text a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .contacts__item-email {
   color: var(--accent-color);
 }
 
+.contacts__item-email a {
+  color: var(--accent-color);
+}
 
 /*Footer*/
 .footer {
@@ -540,6 +550,10 @@ body {
 
 /*max-width: 1200px*/
 @media screen and (max-width: 1200px) {
+  .header__title {
+    padding: 0 10px;
+  }
+
   .projects__flex {
     padding: 20px 5px 0;
   }
@@ -642,6 +656,10 @@ body {
   .portfolio__grid {
     grid-template-columns: repeat(1, 1fr);
     padding: 0 10px;
+  }
+
+  .questions__item:last-child {
+    margin-bottom: 50px;
   }
 
   .partners__item:nth-child(5n) {
