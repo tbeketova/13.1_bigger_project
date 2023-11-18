@@ -9,12 +9,13 @@
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+  <!-- <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/> -->
   <link rel="stylesheet" href="css/style.css">
   <title>13.1 Реализация больших проектов</title>
 </head>
 <body>
 
+<!-- Materialize menu-burger -->
   <ul id="slide-out" class="sidenav">
     <li><a href="#!"><i class="material-icons">cloud</i>About us</a></li>
     <li><a href="#!"><i class="material-icons">adb</i>About us</a></li>
@@ -22,7 +23,7 @@
     <li><div class="divider"></div></li>
     <li><a href="#!" class="sidenav-close"><i class="material-icons">apps</i>Close</a></li>
   </ul>
-  
+  <!--  -->
 
   <header class="header">
     <div class="container">
@@ -104,7 +105,7 @@
           <p class="request__text">РЕАЛИЗУЕМ САМЫЕ СМЕЛЫЕ РЕШЕНИЯ В РОССИИ!</p>
         </div>
         <div class="request__flex-right">
-          <a href="" class="request__button">ВАШ ЗАПРОС</a>
+          <a href="#modal1" class="request__button modal-trigger">ВАШ ЗАПРОС</a>
         </div>
       </div>
     </div>
@@ -157,28 +158,28 @@
   <section class="portfolio">
     <div class="portfolio__grid">
       <div class="portfolio__grid-item">
-        <img src="img/portfolio-img.png" alt="Portfolio img" width="480" height="407">
+        <img class="materialboxed" src="img/portfolio-img.png" alt="Portfolio img" width="480" height="407">
       </div>
       <div class="portfolio__grid-item">
-        <img src="img/portfolio-img.png" alt="Portfolio img" width="480" height="407">
+        <img class="materialboxed" src="img/portfolio-img.png" alt="Portfolio img" width="480" height="407">
       </div>
       <div class="portfolio__grid-item">
-        <img src="img/portfolio-img.png" alt="Portfolio img" width="480" height="407">
+        <img class="materialboxed" src="img/portfolio-img.png" alt="Portfolio img" width="480" height="407">
       </div>
       <div class="portfolio__grid-item">
-        <img src="img/portfolio-img.png" alt="Portfolio img" width="480" height="407">
+        <img class="materialboxed" src="img/portfolio-img.png" alt="Portfolio img" width="480" height="407">
       </div>
       <div class="portfolio__grid-item">
-        <img src="img/portfolio-img.png" alt="Portfolio img" width="480" height="407">
+        <img class="materialboxed" src="img/portfolio-img.png" alt="Portfolio img" width="480" height="407">
       </div>
       <div class="portfolio__grid-item">
-        <img src="img/portfolio-img.png" alt="Portfolio img" width="480" height="407">
+        <img class="materialboxed" src="img/portfolio-img.png" alt="Portfolio img" width="480" height="407">
       </div>
       <div class="portfolio__grid-item">
-        <img src="img/portfolio-img.png" alt="Portfolio img" width="480" height="407">
+        <img class="materialboxed" src="img/portfolio-img.png" alt="Portfolio img" width="480" height="407">
       </div>
       <div class="portfolio__grid-item">
-        <img src="img/portfolio-img.png" alt="Portfolio img" width="480" height="407">
+        <img class="materialboxed" src="img/portfolio-img.png" alt="Portfolio img" width="480" height="407">
       </div>
     </div>
   </section>
@@ -285,7 +286,7 @@
           </li>
           <li class="contacts__item">
             <img src="img/phone.svg" alt="" width="255" height="49" >
-            <p class="contacts__item-title">ТЕЛЕФОН::</p>
+            <p class="contacts__item-title">ТЕЛЕФОН:</p>
             <p class="contacts__item-text"><a href="tel:+7812112233"> 8 (812) 111-22-33</a> <br>
               <a href="tel:+7812112233">8 (812) 111-22-33</a></p>
           </li>
@@ -311,6 +312,20 @@
       </div>
     </div>
   </footer>
+
+  <!-- Modal Trigger -->
+  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header tekst</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat modal-trigger">Agree</a>
+    </div>
+  </div>
 
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
